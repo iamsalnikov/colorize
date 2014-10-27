@@ -5,12 +5,15 @@ class ColorizeString {
 
   static final String ESC = "\u{1B}";
 
-  String text = '';
+  String initial = '';
+  String wrapped = '';
 
-  ColorizeString(this.text);
+  ColorizeString([this.initial = '']) {
+    wrapped = initial;
+  }
 
   String toString() {
-    return text;
+    return wrapped;
   }
 
   ColorizeString noSuchMethod(Invocation mirror) {
@@ -20,19 +23,37 @@ class ColorizeString {
     return this;
   }
 
+  ColorizeString call(String text) {
+    this.initial = text;
+    this.wrapped = text;
+    return this;
+  }
+
   String buildEscSeq(String style) {
     return ESC + "[${Styles.list[style]}m";
   }
 
-  ColorizeString apply(String style) {
-    if (Styles.list.containsKey(style)) {
-      text = applyStyle(style, text);
+  ColorizeString apply(String style, [String text]) {
+
+    if (text == null) {
+      text = wrapped;
     }
 
+    wrapped = _stylize(style, text);
     return this;
+
   }
 
-  String applyStyle(String style, String text) {
+  String _stylize(String style, String text) {
+
+    if (Styles.list.containsKey(style)) {
+      return _applyStyle(style, text);
+    }
+
+    return text;
+  }
+
+  String _applyStyle(String style, String text) {
     return buildEscSeq(style) + text + buildEscSeq('reset');
   }
 
