@@ -28,18 +28,18 @@ import 'package:colorize/colorize.dart';
 
 You have two way to colorize your string:
 
-* use class `ColorizeString`
+* use class `Colorize`
 * use top-level function `color()`
 
-### Use `ColorizeString`
+### Use `Colorize`
 
-For colorize string with `ColorizeString` class you should create object of type `ColorizeString`:
+For colorize string with `Colorize` class you should create object of type `Colorize`:
 
 ```dart
-ColorizeString string = new ColorizeString("This is my string!");
+Colorize string = new Colorize("This is my string!");
 ```
 
-Then you can call methods of `ColorizeString`.
+Then you can call methods of `Colorize`.
 
 **Text color**
 
