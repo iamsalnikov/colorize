@@ -40,10 +40,6 @@ class Colorize {
 
   }
 
-  String operator +(Colorize string) {
-    return this.toString() + string.toString();
-  }
-
   String _stylize(String style, String text) {
 
     if (Styles.list.containsKey(style)) {
