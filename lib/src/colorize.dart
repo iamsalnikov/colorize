@@ -21,7 +21,8 @@ class Colorize {
   }
 
   Colorize call(String text) {
-    return new Colorize(text);
+    initial = text;
+    return this;
   }
 
   String buildEscSeq(String style) {
