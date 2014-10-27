@@ -1,0 +1,7 @@
+name: colorize
+version: 0.0.1
+description: Colorize console output
+dependencies:
+
+dev_dependencies:
+#  unittest: any
