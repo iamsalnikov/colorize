@@ -6,14 +6,11 @@ class ColorizeString {
   static final String ESC = "\u{1B}";
 
   String initial = '';
-  String wrapped = '';
 
-  ColorizeString([this.initial = '']) {
-    wrapped = initial;
-  }
+  ColorizeString([this.initial = '']);
 
   String toString() {
-    return wrapped;
+    return initial;
   }
 
   ColorizeString noSuchMethod(Invocation mirror) {
@@ -24,9 +21,7 @@ class ColorizeString {
   }
 
   ColorizeString call(String text) {
-    this.initial = text;
-    this.wrapped = text;
-    return this;
+    return new ColorizeString(text);
   }
 
   String buildEscSeq(String style) {
@@ -36,12 +31,16 @@ class ColorizeString {
   ColorizeString apply(String style, [String text]) {
 
     if (text == null) {
-      text = wrapped;
+      text = initial;
     }
 
-    wrapped = _stylize(style, text);
+    initial = _stylize(style, text);
     return this;
 
+  }
+
+  String operator +(ColorizeString string) {
+    return this.toString() + string.toString();
   }
 
   String _stylize(String style, String text) {
