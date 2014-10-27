@@ -1,6 +1,8 @@
 name: colorize
 version: 0.0.1
 description: Colorize console output
+author: Alexey Salnikov <me@iamsalnikov.ru>
+homepage: https://github.com/iamsalnikov/colorize
 dependencies:
 
 dev_dependencies:
