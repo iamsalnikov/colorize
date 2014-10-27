@@ -5,72 +5,72 @@ void main() {
   print("\n");
   color("\tColorize", front: Styles.GREEN, isBold: true);
 
-  ColorizeString colorize = new ColorizeString("\tColorize ")..lightYellow();
-  ColorizeString console = new ColorizeString("console ")..lightBlue();
-  ColorizeString output = new ColorizeString("output")..lightMagenta();
+  Colorize colorize = new Colorize("\tColorize ")..lightYellow();
+  Colorize console = new Colorize("console ")..lightBlue();
+  Colorize output = new Colorize("output")..lightMagenta();
 
   String description = colorize.toString() + " " + console.toString() + " " + output.toString();
   print(description);
   print("\n");
 
-  ColorizeString bg = new ColorizeString("\t")..bgRed();
-  ColorizeString text = new ColorizeString("\t<- red")..red();
+  Colorize bg = new Colorize("\t")..bgRed();
+  Colorize text = new Colorize("\t<- red")..red();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgGreen();
-  text = new ColorizeString("\t<- green")..green();
+  bg = new Colorize("\t")..bgGreen();
+  text = new Colorize("\t<- green")..green();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgYellow();
-  text = new ColorizeString("\t<- yellow")..yellow();
+  bg = new Colorize("\t")..bgYellow();
+  text = new Colorize("\t<- yellow")..yellow();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgBlue();
-  text = new ColorizeString("\t<- blue")..blue();
+  bg = new Colorize("\t")..bgBlue();
+  text = new Colorize("\t<- blue")..blue();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgMagenta();
-  text = new ColorizeString("\t<- magenta")..magenta();
+  bg = new Colorize("\t")..bgMagenta();
+  text = new Colorize("\t<- magenta")..magenta();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgCyan();
-  text = new ColorizeString("\t<- cyan")..cyan();
+  bg = new Colorize("\t")..bgCyan();
+  text = new Colorize("\t<- cyan")..cyan();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightGray();
-  text = new ColorizeString("\t<- lightGray")..lightGray();
+  bg = new Colorize("\t")..bgLightGray();
+  text = new Colorize("\t<- lightGray")..lightGray();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgDarkGray();
-  text = new ColorizeString("\t<- darkGray")..darkGray();
+  bg = new Colorize("\t")..bgDarkGray();
+  text = new Colorize("\t<- darkGray")..darkGray();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightRed();
-  text = new ColorizeString("\t<- lightRed")..lightRed();
+  bg = new Colorize("\t")..bgLightRed();
+  text = new Colorize("\t<- lightRed")..lightRed();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightGreen();
-  text = new ColorizeString("\t<- lightGreen")..lightGreen();
+  bg = new Colorize("\t")..bgLightGreen();
+  text = new Colorize("\t<- lightGreen")..lightGreen();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightYellow();
-  text = new ColorizeString("\t<- lightYellow")..lightYellow();
+  bg = new Colorize("\t")..bgLightYellow();
+  text = new Colorize("\t<- lightYellow")..lightYellow();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightBlue();
-  text = new ColorizeString("\t<- lightBlue")..lightBlue();
+  bg = new Colorize("\t")..bgLightBlue();
+  text = new Colorize("\t<- lightBlue")..lightBlue();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightMagenta();
-  text = new ColorizeString("\t<- lightMagenta")..lightMagenta();
+  bg = new Colorize("\t")..bgLightMagenta();
+  text = new Colorize("\t<- lightMagenta")..lightMagenta();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgLightCyan();
-  text = new ColorizeString("\t<- lightCyan")..lightCyan();
+  bg = new Colorize("\t")..bgLightCyan();
+  text = new Colorize("\t<- lightCyan")..lightCyan();
   print("\t" + bg.toString() + text.toString());
 
-  bg = new ColorizeString("\t")..bgWhite();
-  text = new ColorizeString("\t<- white")..white();
+  bg = new Colorize("\t")..bgWhite();
+  text = new Colorize("\t<- white")..white();
   print("\t" + bg.toString() + text.toString());
 
   print("\n");

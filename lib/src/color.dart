@@ -10,7 +10,7 @@ void color(String text, {
     bool isReverse: false
   }) {
 
-  ColorizeString string = new ColorizeString(text);
+  Colorize string = new Colorize(text);
 
   if (front.length > 0) {
     string.apply(front);

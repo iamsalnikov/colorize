@@ -1,34 +1,34 @@
 part of colorize;
 
 @proxy
-class ColorizeString {
+class Colorize {
 
   static final String ESC = "\u{1B}";
 
   String initial = '';
 
-  ColorizeString([this.initial = '']);
+  Colorize([this.initial = '']);
 
   String toString() {
     return initial;
   }
 
-  ColorizeString noSuchMethod(Invocation mirror) {
+  Colorize noSuchMethod(Invocation mirror) {
     String style = MirrorSystem.getName(mirror.memberName);
     apply(style);
 
     return this;
   }
 
-  ColorizeString call(String text) {
-    return new ColorizeString(text);
+  Colorize call(String text) {
+    return new Colorize(text);
   }
 
   String buildEscSeq(String style) {
     return ESC + "[${Styles.list[style]}m";
   }
 
-  ColorizeString apply(String style, [String text]) {
+  Colorize apply(String style, [String text]) {
 
     if (text == null) {
       text = initial;
@@ -39,7 +39,7 @@ class ColorizeString {
 
   }
 
-  String operator +(ColorizeString string) {
+  String operator +(Colorize string) {
     return this.toString() + string.toString();
   }
 
