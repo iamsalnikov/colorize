@@ -91,3 +91,34 @@ Then you can call methods of `ColorizeString`.
 * blink()
 * reverse()
 * concealed()
+
+After apply styles to string you can print it to console:
+
+```dart
+print(string);
+```
+
+### Use top-level function `color()`
+
+Top-level function `color` apply one required parameter - `String text`. It is text, that would be print
+on console.
+
+Also top-level function `color` has seven named parameters:
+
+* `String front` - name of front color (you can also use the constants of class `Styles`). Default value is `''`.
+* `String back`: name of background color (you can also use the constants of class `Styles`). Default value is `''`.
+* `bool isUnderline` - default value is `false`.
+* `bool isBold` - default value is `false`.
+* `bool isDark` - default value is `false`.
+* `bool isItalic` - default value is `false`.
+* `bool isReverse` - default value is `false`.
+
+**Example of usage**
+
+```dart
+color("Bold Italic Underline", front: Styles.RED, isBold: true, isItalic: true, isUnderline: true);
+```
+
+### Class `Styles`
+
+Class `Styles` contains constants with color's names.
