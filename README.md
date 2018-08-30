@@ -119,6 +119,6 @@ Also top-level function `color` has seven named parameters:
 color("Bold Italic Underline", front: Styles.RED, isBold: true, isItalic: true, isUnderline: true);
 ```
 
-### Class `Styles`
+### Enum `Styles`
 
-Enum `Styles` contains all;
+Enum `Styles` contains all styles which you can pass to Colorize.applyState method;
