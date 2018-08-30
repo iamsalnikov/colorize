@@ -21,7 +21,7 @@ class Colorize {
   }
 
   void bgBlue() {
-    (Styles.BG_BLUE);
+    apply(Styles.BG_BLUE);
   }
 
   void bgCyan() {
@@ -37,7 +37,7 @@ class Colorize {
   }
 
   void bgGreen() {
-    (Styles.BG_GREEN);
+    apply(Styles.BG_GREEN);
   }
 
   void bgLightBlue() {
@@ -73,7 +73,7 @@ class Colorize {
   }
 
   void bgRed() {
-    (Styles.BG_RED);
+    apply(Styles.BG_RED);
   }
 
   void bgWhite() {
@@ -81,7 +81,7 @@ class Colorize {
   }
 
   void bgYellow() {
-    (Styles.BG_YELLOW);
+    apply(Styles.BG_YELLOW);
   }
 
   void black() {
