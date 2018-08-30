@@ -5,7 +5,7 @@ void main() {
   print("\n");
   color("\tColorize", front: Styles.GREEN, isBold: true);
 
-  Colorize colorize = new Colorize("\tColorize ")..lightYellow();
+  Colorize colorize = (new Colorize("\tColorize ") as dynamic)..lightYellow();
   Colorize console = new Colorize("console ")..lightBlue();
   Colorize output = new Colorize("output")..lightMagenta();
 
