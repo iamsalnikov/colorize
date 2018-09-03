@@ -105,8 +105,8 @@ on console.
 
 Also top-level function `color` has seven named parameters:
 
-* `String front` - name of front color (you can also use the constants of class `Styles`). Default value is `''`.
-* `String back`: name of background color (you can also use the constants of class `Styles`). Default value is `''`.
+* `Styles front` - name of front color (you can also use the constants of class `Styles`). Default value is `''`.
+* `Styles back`: name of background color (you can also use the constants of class `Styles`). Default value is `''`.
 * `bool isUnderline` - default value is `false`.
 * `bool isBold` - default value is `false`.
 * `bool isDark` - default value is `false`.
@@ -119,6 +119,6 @@ Also top-level function `color` has seven named parameters:
 color("Bold Italic Underline", front: Styles.RED, isBold: true, isItalic: true, isUnderline: true);
 ```
 
-### Class `Styles`
+### Enum `Styles`
 
-Class `Styles` contains constants with color's names.
+Enum `Styles` contains all styles which you can pass to Colorize.applyState method;
