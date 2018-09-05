@@ -4,7 +4,7 @@ description: Colorize console output
 author: Alexey Salnikov <me@iamsalnikov.ru>
 homepage: https://github.com/iamsalnikov/colorize
 environment:
-  sdk: '>=2.0.0 <3.0.0'
+  sdk: '<3.0.0'
 dependencies:
 
 dev_dependencies:
