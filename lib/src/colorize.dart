@@ -16,88 +16,88 @@ class Colorize {
     return this;
   }
 
-  void bgBlack() {
-    apply(Styles.BG_BLACK);
+  Colorize bgBlack() {
+    return apply(Styles.BG_BLACK);
   }
 
-  void bgBlue() {
-    apply(Styles.BG_BLUE);
+  Colorize bgBlue() {
+    return apply(Styles.BG_BLUE);
   }
 
-  void bgCyan() {
-    apply(Styles.BG_CYAN);
+  Colorize bgCyan() {
+    return apply(Styles.BG_CYAN);
   }
 
-  void bgDarkGray() {
-    apply(Styles.BG_DARK_GRAY);
+  Colorize bgDarkGray() {
+    return apply(Styles.BG_DARK_GRAY);
   }
 
-  void bgDefault() {
-    apply(Styles.BG_DEFAULT);
+  Colorize bgDefault() {
+    return apply(Styles.BG_DEFAULT);
   }
 
-  void bgGreen() {
-    apply(Styles.BG_GREEN);
+  Colorize bgGreen() {
+    return apply(Styles.BG_GREEN);
   }
 
-  void bgLightBlue() {
-    apply(Styles.BG_LIGHT_BLUE);
+  Colorize bgLightBlue() {
+    return apply(Styles.BG_LIGHT_BLUE);
   }
 
-  void bgLightCyan() {
-    apply(Styles.BG_LIGHT_CYAN);
+  Colorize bgLightCyan() {
+    return apply(Styles.BG_LIGHT_CYAN);
   }
 
-  void bgLightGray() {
-    apply(Styles.BG_LIGHT_GRAY);
+  Colorize bgLightGray() {
+    return apply(Styles.BG_LIGHT_GRAY);
   }
 
-  void bgLightGreen() {
-    apply(Styles.BG_LIGHT_GREEN);
+  Colorize bgLightGreen() {
+    return apply(Styles.BG_LIGHT_GREEN);
   }
 
-  void bgLightMagenta() {
-    apply(Styles.BG_LIGHT_MAGENTA);
+  Colorize bgLightMagenta() {
+    return apply(Styles.BG_LIGHT_MAGENTA);
   }
 
-  void bgLightRed() {
-    apply(Styles.BG_LIGHT_RED);
+  Colorize bgLightRed() {
+    return apply(Styles.BG_LIGHT_RED);
   }
 
-  void bgLightYellow() {
-    apply(Styles.BG_LIGHT_YELLOW);
+  Colorize bgLightYellow() {
+    return apply(Styles.BG_LIGHT_YELLOW);
   }
 
-  void bgMagenta() {
-    apply(Styles.BG_MAGENTA);
+  Colorize bgMagenta() {
+    return apply(Styles.BG_MAGENTA);
   }
 
-  void bgRed() {
-    apply(Styles.BG_RED);
+  Colorize bgRed() {
+    return apply(Styles.BG_RED);
   }
 
-  void bgWhite() {
-    apply(Styles.BG_WHITE);
+  Colorize bgWhite() {
+    return apply(Styles.BG_WHITE);
   }
 
-  void bgYellow() {
-    apply(Styles.BG_YELLOW);
+  Colorize bgYellow() {
+    return apply(Styles.BG_YELLOW);
   }
 
-  void black() {
-    apply(Styles.BLACK);
+  Colorize black() {
+    return apply(Styles.BLACK);
   }
 
-  void blink() {
-    apply(Styles.BLINK);
+  Colorize blink() {
+    return apply(Styles.BLINK);
   }
 
-  void blue() {
-    apply(Styles.BLUE);
+  Colorize blue() {
+    return apply(Styles.BLUE);
   }
 
-  void bold() {
-    apply(Styles.BOLD);
+  Colorize bold() {
+    return apply(Styles.BOLD);
   }
 
   String buildEscSeq(Styles style) {
@@ -109,88 +109,88 @@ class Colorize {
     return this;
   }
 
-  void concealed() {
-    apply(Styles.CONCEALED);
+  Colorize concealed() {
+    return apply(Styles.CONCEALED);
   }
 
-  void cyan() {
-    apply(Styles.CYAN);
+  Colorize cyan() {
+    return apply(Styles.CYAN);
   }
 
-  void dark() {
-    apply(Styles.DARK);
+  Colorize dark() {
+    return apply(Styles.DARK);
   }
 
-  void darkGray() {
-    apply(Styles.DARK_GRAY);
+  Colorize darkGray() {
+    return apply(Styles.DARK_GRAY);
   }
 
-  void default_slyle() {
-    apply(Styles.DEFAULT);
+  Colorize default_slyle() {
+    return apply(Styles.DEFAULT);
   }
 
-  void green() {
-    apply(Styles.GREEN);
+  Colorize green() {
+    return apply(Styles.GREEN);
   }
 
-  void italic() {
-    apply(Styles.ITALIC);
+  Colorize italic() {
+    return apply(Styles.ITALIC);
   }
 
-  void lightBlue() {
-    apply(Styles.LIGHT_BLUE);
+  Colorize lightBlue() {
+    return apply(Styles.LIGHT_BLUE);
   }
 
-  void lightCyan() {
-    apply(Styles.LIGHT_CYAN);
+  Colorize lightCyan() {
+    return apply(Styles.LIGHT_CYAN);
   }
 
-  void lightGray() {
-    apply(Styles.LIGHT_GRAY);
+  Colorize lightGray() {
+    return apply(Styles.LIGHT_GRAY);
   }
 
-  void lightGreen() {
-    apply(Styles.LIGHT_GREEN);
+  Colorize lightGreen() {
+    return apply(Styles.LIGHT_GREEN);
   }
 
-  void lightMagenta() {
-    apply(Styles.LIGHT_MAGENTA);
+  Colorize lightMagenta() {
+    return apply(Styles.LIGHT_MAGENTA);
   }
 
-  void lightRed() {
-    apply(Styles.LIGHT_RED);
+  Colorize lightRed() {
+    return apply(Styles.LIGHT_RED);
   }
 
-  void lightYellow() {
-    apply(Styles.LIGHT_YELLOW);
+  Colorize lightYellow() {
+    return apply(Styles.LIGHT_YELLOW);
   }
 
-  void magenta() {
-    apply(Styles.MAGENTA);
+  Colorize magenta() {
+    return apply(Styles.MAGENTA);
   }
 
-  void red() {
-    apply(Styles.RED);
+  Colorize red() {
+    return apply(Styles.RED);
   }
 
-  void reverse() {
-    apply(Styles.REVERSE);
+  Colorize reverse() {
+    return apply(Styles.REVERSE);
   }
 
   String toString() {
     return initial;
   }
 
-  void underline() {
-    apply(Styles.UNDERLINE);
+  Colorize underline() {
+    return apply(Styles.UNDERLINE);
   }
 
-  void white() {
-    apply(Styles.WHITE);
+  Colorize white() {
+    return apply(Styles.WHITE);
   }
 
-  void yellow() {
-    apply(Styles.YELLOW);
+  Colorize yellow() {
+    return apply(Styles.YELLOW);
   }
 
   String _applyStyle(Styles style, String text) {
