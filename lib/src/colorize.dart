@@ -125,7 +125,7 @@ class Colorize {
     return apply(Styles.DARK_GRAY);
   }
 
-  Colorize default_slyle() {
+  Colorize default_style() {
     return apply(Styles.DEFAULT);
   }
 
