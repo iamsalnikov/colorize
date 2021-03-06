@@ -1,13 +1,15 @@
 part of colorize;
 
-void color(String text,
-    {Styles front,
-    Styles back,
-    bool isUnderline: false,
-    bool isBold: false,
-    bool isDark: false,
-    bool isItalic: false,
-    bool isReverse: false}) {
+void color(
+  String text, {
+  Styles? front,
+  Styles? back,
+  bool isUnderline: false,
+  bool isBold: false,
+  bool isDark: false,
+  bool isItalic: false,
+  bool isReverse: false,
+}) {
   Colorize string = new Colorize(text);
 
   if (front != null) {

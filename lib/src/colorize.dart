@@ -7,7 +7,7 @@ class Colorize {
 
   Colorize([this.initial = '']);
 
-  Colorize apply(Styles style, [String text]) {
+  Colorize apply(Styles style, [String? text]) {
     if (text == null) {
       text = initial;
     }

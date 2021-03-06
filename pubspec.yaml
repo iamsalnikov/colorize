@@ -1,11 +1,7 @@
 name: colorize
-version: 2.0.0
+version: 3.0.0
 description: Colorize console output
 author: Alexey Salnikov <me@iamsalnikov.ru>
 homepage: https://github.com/iamsalnikov/colorize
 environment:
-  sdk: '<3.0.0'
-dependencies:
-
-dev_dependencies:
-#  unittest: any
+  sdk: ">=2.12.0 <3.0.0"
