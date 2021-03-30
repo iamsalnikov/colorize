@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "colorize",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    }
+  ],
+  "generated": "2021-03-06T10:15:34.121508Z",
+  "generator": "pub",
+  "generatorVersion": "2.12.0"
+}
